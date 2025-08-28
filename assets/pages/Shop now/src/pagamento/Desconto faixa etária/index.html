@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desconto por faixa etária</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Desconto por faixa etária</h1>
+    </header>
+    <main>
+        <section class="container">
+            <div class="sub-container">
+                <div class="container-imagem">
+                    <img src="../image/verificador de idade.webp" alt="verificador de idade" class="imagem">
+                </div>
+                
+                <hr>
+                <div class="dados">
+                    <p>Nome: <input type="text" name="nometxt" id="nometxt"></p>
+                    <p>Sobrenome: <input type="text" name="nometxt" id="sobrenometxt"></p>
+                    <p>Informe o preço da joia: <input type="number" name="valorJ" id="valorJ"></p>
+                    <p>Digite sua idade: <input type="number" name="idade" id="idade"></p>
+                    <input type="button" value="COMPRAR AGORA" onclick="calcular()" id="button-shop">
+                </div>
+            </div>
+            
+            <div id="resultado">
+            </div>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
