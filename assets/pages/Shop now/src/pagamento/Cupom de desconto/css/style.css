@@ -1,0 +1,93 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --background: #f6f4f1;
+    --letra: #0000;
+    --titulos: #5b5247;
+    --destaque: #af9d81;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+header {
+    text-align: center;
+    margin: 20px;
+}
+main {
+    max-width: 1200px;
+    padding: 3rem 2rem;
+    margin: 0 auto;
+}
+.container .sub-container {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    box-shadow: 5px 5px 50px rgba(99, 91, 91, 0.712);
+    background-color: var(--destaque);
+    border-radius: 30px;
+}
+.container .sub-container hr{
+    width: 3px;
+    height: 390px;
+    background-color: var(--titulos);
+    border: none;
+}
+.resultado {
+    padding: 50px;
+    font-size: 1.5rem;
+}
+.container  .sub-container .container-imagem {
+    flex: 1 1 45rem;
+    padding: 20px;
+}
+.container .sub-container .container-imagem img {
+    width: 150px;
+}
+
+.container .sub-container .dados {
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+.container .sub-container .dados p {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: white;
+}
+.container .sub-container .dados input {
+    padding: 5px;
+    border-radius: 30px;
+    border: 1px solid var(--titulos);
+    font-size: 18px;
+}
+.container .sub-container .dados #button-shop {
+    font-size: 1rem;
+    font-weight: lighter;
+    line-height:  1.8;
+    padding: 1rem 0;
+    text-decoration: none;
+    color: white;
+    background-color: var(--titulos);
+    padding: 10px;
+}
+
+@media screen and (max-width: 980px){
+    .container .sub-container {
+        flex-wrap: wrap;
+    }
+   .container .sub-container .container-imagem img {
+    width: 250px;
+   }
+   .container .sub-container hr{
+    width: 390px;
+    height: 2px;
+    margin: 0 10px;
+   }
+}
