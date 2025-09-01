@@ -166,7 +166,7 @@
 }
 
 .avaliações {
-    background-image: url(../../image/fundo\ 2.jpg);
+    background-image: url(../../assets/image/fundo\ 2.jpg);
     text-align: center;
     padding: 5% 3%;
 }
@@ -249,7 +249,7 @@
 }
 
 .oferta {
-    background-image: url(../../image/fundo\ 2\ \(1\).jpg);
+    background-image: url(../../assets/image/fundo\ 2\ \(1\).jpg);
     padding: 5% 3%;
     align-items: center;
 }
