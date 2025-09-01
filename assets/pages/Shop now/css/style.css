@@ -121,7 +121,7 @@
 .descricao {
     margin-right: 20px;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1222px) {
     .hamburger {
         content: " ";
         display: block;
@@ -194,5 +194,8 @@
     .nav.active .hamburger::after {
         transform: rotate(-135deg);
         top: -7px;
+    }
+   .container-produtos{
+        grid-template-columns: 1fr;
     }
 }

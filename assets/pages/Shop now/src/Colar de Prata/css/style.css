@@ -22,6 +22,8 @@ header {
 }
 main {
     display: flex;
+    margin: 0 360px;
+    font-size: 20px;
 }
 .container {
     display: flex;
@@ -32,25 +34,39 @@ main {
     height: 250px;
     border-radius: 30px;
 }
+.container-descricao h1{
+    font-size: 25px;
+}
+.container-descricao h3 {
+    font-size: 25px;
+}
 .container-descricao {
     margin-left: 25px;
-    font-size: 20px;
 }
 .container-descricao p {
+    font-size: 25px;
     margin-bottom: 5px;
 }
 .container-descricao hr {
     border: 1px solid #5b524783;
-    margin: 20px 10px;
+    margin: 20px 20px;
 }
 .container-descricao a {
     background-color: var(--destaque);
     color: white;
     text-decoration: none;
     padding: 10px;
+    font-size: 25px;
 }
 @media screen and (max-width: 780px){
+    header {
+        padding: 48px;
+    }
    main {
     flex-direction: column;
+    margin: 0 30px;
+   }
+   .container-descricao a {
+    margin-bottom: 20px;
    }
 }

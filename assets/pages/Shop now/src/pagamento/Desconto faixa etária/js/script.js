@@ -13,6 +13,9 @@ function calcular() {
 
      resultado.style.padding = '20px'
      resultado.style.fontSize = '20px'
+    
+     
+
     if (Idade <= 12) {
         preço /= 0.50
         resultado.innerHTML = `Olá, <strong>${Nome} ${Sobrenome} </strong>!! Você tem <strong>${Idade} anos </strong>, recebeu <strong>50% de desconto!!</strong> Total: <strong>R$${preço.toFixed(2)}</strong>`
