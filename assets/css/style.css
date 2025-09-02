@@ -150,6 +150,10 @@
     border-radius: 20px;
     margin-top: 10px;
 }
+.destaques-botton a{
+    text-decoration: none;
+    color: var(--background);
+}
 
 .destaques-botton:hover {
     background-color: var(--titulos);
@@ -241,7 +245,14 @@
     color: var(--titulos);
     padding: 5px;
 }
-
+.sobre a{
+    text-decoration: none;
+    color: var(--titulos);
+}
+.sobre a:hover{
+    color: var(--background);
+    transition: 1s;
+}
 .sobre button:hover {
     background-color: var(--titulos);
     color: var(--background);
