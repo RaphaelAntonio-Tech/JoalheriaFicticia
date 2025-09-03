@@ -14,9 +14,11 @@
     font-family: var(--fonte);
 }
 header h1{
-    margin-top: 20px;
+    margin-top: 30px;
     text-align: center;
     font-size: 40px;
+    color: var(--titulos);
+    text-transform: uppercase;
 }
 .arco-principal {
     display: flex;
@@ -33,6 +35,7 @@ header h1{
     margin-top: 200px;
 }
 .produtos p{
+    color: var(--titulos);
     font-size: 20px;
     
 }
@@ -46,13 +49,16 @@ header h1{
     padding: 8px 20px;
     border: none;
     font-size: 20px;
-    transition: 0.3s;
     border-radius: 20px;
     margin-top: 10px;
     text-decoration: none;
     color: var(--background);
     text-transform: uppercase;
     font-weight: bold;
+}
+.button:hover {
+    transition: 0.3s;
+    background-color: var(--titulos);
 }
 
 @media  screen and (max-width: 780px) {

@@ -15,74 +15,15 @@
     font-family: var(--fonte);
 }
 
-.header {
-    padding-inline: 16px;
-    border-bottom: 1px solid var(--titulos);
-}
-
-.nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-inline: auto;
-    padding: 25px 30px;
-}
-
-.nav-list {
-    display: flex;
-    gap: 32px;
-    list-style: none;
-    background-color: white;
-}
-
-.nav h1 {
-    color: var(--titulos);
-    display: inline-block;
-}
-
-.nav-list a {
-    color: var(--titulos);
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 500;
-    padding-block: 16px;
-}
-
-.nav-list a:hover {
-    background-color: var(--titulos);
-    color: var(--background);
-    border-radius: 8px;
-    transition: 0.5s;
-}
-
-.hamburger {
-    display: none;
-    border: none;
-    background: none;
-    border-top: 3px solid var(--titulos);
-    cursor: pointer;
-}
-
-.hamburger::before,
-.hamburger::after {
-    content: " ";
-    display: block;
-    width: 30px;
-    height: 3px;
-    background-color: var(--titulos);
-    margin-top: 5px;
-    position: relative;
-    transition: 0.3s;
-}
 .shop {
     text-align: center;
     text-transform: uppercase;
-    margin-top: 10px;
+    margin-top: 80px;
     font-weight: 100;
+    color: var(--titulos);
 }
 .oferts {
-    align-items: left;
-    margin-left: 20px;
+    margin-left: 7%;
     text-transform: uppercase;
     font-weight: 100;
 }
@@ -90,9 +31,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
-    margin: 10% 2%;
-    padding: 20px;
-   
+    margin: 5% 15%;
+    
 }
 .produto {
     display: flex;
@@ -107,6 +47,7 @@
     font-size: 20px;
     margin-top: 15px;
     margin-right: 20px;
+    color: var(--titulos);
 }
 .produto a {
     margin-top: 10px;
@@ -122,80 +63,14 @@
     margin-right: 20px;
 }
 @media screen and (max-width: 1222px) {
-    .hamburger {
-        content: " ";
-        display: block;
-        position: relative;
-        width: 30px;
-        height: 3px;
-        background-color: var(--titulos);
-        cursor: pointer;
-        margin-top: -8px;
-        z-index: 1;
-    }
-
-    .nav {
-        justify-content: right;
-        align-items: right;
-    }
-
-    .nav-list {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: var(--destaque);
-        clip-path: circle(100px at 90% -15%);
-        transition: 1s ease-out;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        gap: 0;
-        pointer-events: none;
-    }
-
-    .nav-list li:nth-child(1) a {
-        transition: 0.5s 0.2s;
-    }
-
-    .nav-list li:nth-child(2) a {
-        transition: 0.5s 0.4s;
-    }
-
-    .nav-list li:nth-child(3) a {
-        transition: 0.5s 0.6s;
-    }
-
-    .nav {
-        margin-top: 10px;
-    }
-
-    .nav.active .nav-list {
-        clip-path: circle(1500px at 90%);
-        pointer-events: all;
-    }
-
-    .nav.active .nav-list a {
-        opacity: 1;
-    }
-
-    .nav.active .hamburger {
-        position: fixed;
-        top: 26px;
-        right: 16px;
-        border-top-color: var(--destaque);
-    }
-
-    .nav.active .hamburger::before {
-        transform: rotate(135deg);
-    }
-
-    .nav.active .hamburger::after {
-        transform: rotate(-135deg);
-        top: -7px;
-    }
    .container-produtos{
         grid-template-columns: 1fr;
     }
+    .oferts {
+        margin-top: 10px;
+    }
+    .produto img {
+    width: 300px;
+    height: 200px;
+}
 }
