@@ -60,7 +60,25 @@ header h1{
     transition: 0.3s;
     background-color: var(--titulos);
 }
-
+footer {
+    margin: 50px;
+}
+.Voltar {
+    margin-left:7%;
+    padding: 20px 50px;
+    color: var(--background);
+    text-decoration: none;
+    background-color: var(--destaque);
+    text-transform: uppercase;
+    border-radius: 30px;
+}
+.Voltar i {
+    margin-right: 10px;
+}
+.Voltar:hover{
+    background-color: var(--titulos);
+    transition: 0.5s;
+}
 @media  screen and (max-width: 780px) {
     .produtos{
         margin: 30px 0px;
