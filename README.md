@@ -1,6 +1,8 @@
-Landing page de uma **joalheria fictícia** criada inicialmente para praticar `background-image`. Com a evolução do aprendizado em JavaScript, foram adicionadas funcionalidades interativas.
+### 💎 Joalheria Fictícia
+Landing page de uma **joalheria fictícia** criada inicialmente para praticar `background-image`.
+ Larana, Inc. é uma joalheria fictícia que criei atraves de um modelo de site no canva. Com a evolução do aprendizado em JavaScript, foram adicionadas funcionalidades interativas.
 
-### Funcionalidades
+### 📝 Funcionalidades
 
 - Calculadora de descontos
     - Entrada: preço da joia e cupom de desconto
@@ -11,18 +13,18 @@ Landing page de uma **joalheria fictícia** criada inicialmente para praticar `b
         - A partir de 60: 60%
         - Demais idades: sem desconto
 
-### Como usar
+### 📘 Como usar
 
 1. Informe o preço da joia no campo indicado
 2. Opcional: informe um cupom de desconto válido
 3. Selecione ou informe a idade para que as regras de faixa etária sejam aplicadas
 4. Clique em calcular para ver o valor final
 
-### Observações de implementação
+### 🌐 Observações de implementação
 
 - Objetivo inicial: praticar `background-image`
 - Evolução: inclusão de lógica em JavaScript para cálculo de descontos e alternância de tema
 
-### Autor
+### 👨🏽‍💻 Autor
 
 - RaphaelAntonio-Tech - <https://github.com/RaphaelAntonio-Tech> 
