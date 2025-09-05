@@ -151,6 +151,11 @@ header h1{
 footer {
     margin: 50px;
 }
+footer p {
+    color: var(--titulos);
+    text-align: center;
+    margin-top: 30px;
+}
 @media screen and (max-width: 780px){
     header {
         padding: 48px;
@@ -161,6 +166,10 @@ footer {
    }
    .container-descricao a {
     margin-bottom: 20px;
+   }
+   .container img {
+    width: 250px;
+    height: 200px;
    }
 }
 @media screen and (max-width: 1222px) {

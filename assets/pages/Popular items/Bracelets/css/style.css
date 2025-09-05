@@ -20,6 +20,66 @@ header h1{
     color: var(--titulos);
     text-transform: uppercase;
 }
+.header {
+    padding-inline: 16px;
+    
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
+    padding: 25px 30px;
+    border-bottom: 2px solid var(--titulos);
+}
+
+.nav-list {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    background-color: white;
+}
+
+.nav h1 {
+    color: var(--titulos);
+    display: inline-block;
+}
+
+.nav-list a {
+    color: var(--titulos);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-block: 16px;
+}
+
+.nav-list a:hover {
+    background-color: var(--titulos);
+    color: var(--background);
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.hamburger {
+    display: none;
+    border: none;
+    background: none;
+    border-top: 3px solid var(--titulos);
+    cursor: pointer;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: var(--titulos);
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+}
 .arco-principal {
     display: flex;
     justify-content: center;
@@ -60,26 +120,153 @@ header h1{
     transition: 0.3s;
     background-color: var(--titulos);
 }
-footer {
-    margin: 50px;
+.footer {
+    background-color: var(--background);
+    padding: 40px 60px;
+    margin-top: 50px;
+    border-top: 2px solid var(--titulos);
 }
-.Voltar {
-    margin-left:7%;
-    padding: 20px 50px;
-    color: var(--background);
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.nome-compania {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--titulos);
+}
+
+.footer-links {
+    display: flex;
+    gap: 40px;
+}
+
+.footer-links .coluna {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links a {
+    color: var(--titulos);
     text-decoration: none;
-    background-color: var(--destaque);
-    text-transform: uppercase;
-    border-radius: 30px;
+    margin-bottom: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 8px;
 }
-.Voltar i {
-    margin-right: 10px;
-}
-.Voltar:hover{
+
+.footer-links a:hover {
+    color: var(--background);
     background-color: var(--titulos);
     transition: 0.5s;
 }
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.divider {
+    width: 1px;
+    height: 160px;
+    background-color: var(--destaque);
+}
+
+.termos {
+    color: var(--titulos);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.termos:hover {
+    background-color: var(--titulos);
+    color: var(--background);
+    transition: 0.5s;
+}
 @media  screen and (max-width: 780px) {
+     .hamburger {
+        content: " ";
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 3px;
+        background-color: var(--titulos);
+        cursor: pointer;
+        margin-top: -8px;
+        z-index: 1;
+    }
+
+    .nav {
+        justify-content: right;
+        align-items: right;
+    }
+
+    .nav-list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--destaque);
+        clip-path: circle(100px at 90% -15%);
+        transition: 1s ease-out;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        pointer-events: none;
+    }
+
+    .nav-list li:nth-child(1) a {
+        transition: 0.5s 0.2s;
+    }
+
+    .nav-list li:nth-child(2) a {
+        transition: 0.5s 0.4s;
+    }
+
+    .nav-list li:nth-child(3) a {
+        transition: 0.5s 0.6s;
+    }
+
+    .nav {
+        margin-top: 10px;
+    }
+
+    .nav.active .nav-list {
+        clip-path: circle(1500px at 90%);
+        pointer-events: all;
+    }
+
+    .nav.active .nav-list a {
+        opacity: 1;
+    }
+
+    .nav.active .hamburger {
+        position: fixed;
+        top: 26px;
+        right: 16px;
+        border-top-color: var(--destaque);
+    }
+
+    .nav.active .hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    .nav.active .hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
     .produtos{
         margin: 30px 0px;
     }
@@ -91,4 +278,22 @@ footer {
 .button {
     margin-right: 20px;
 }
+.footer-container{
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+   }
+   .footer-links {
+    flex-direction: column;
+    gap: 20px;
+   }
+   .footer-right {
+    flex-direction: column;
+   }
+   .divider {
+    display: none;
+   }
+   .termos {
+    margin-top: 10px;
+   }
 }
