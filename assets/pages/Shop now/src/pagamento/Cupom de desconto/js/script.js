@@ -17,19 +17,19 @@ function calcular() {
 
     if (cupomCliente == '30%OFF') {
         valorJoia *= 0.30
-        resultado.innerHTML = `Olá, <strong>${nomeCliente} ${sobrenomeCliente}</strong>!!! Você recebeu <strong>30% de desconto</strong>. Total: <strong>${valorJoia.toFixed(2)}</strong>`
+        resultado.innerHTML = `Olá, <strong>${nomeCliente} ${sobrenomeCliente}</strong>!!! Você recebeu <strong>30% de desconto</strong>. Total: <strong>R$${valorJoia.toFixed(2)}</strong>`
         imagem.src = '../image/cupom 1.jpg'
     } else if (cupomCliente == '20%OFF') {
         valorJoia *= 0.20
-        resultado.innerHTML = `Olá, <strong>${nomeCliente} ${sobrenomeCliente}</strong>!!! Você recebeu <strong>20% de desconto</strong>. Total: <strong>${valorJoia.toFixed(2)}</strong>`
+        resultado.innerHTML = `Olá, <strong>${nomeCliente} ${sobrenomeCliente}</strong>!!! Você recebeu <strong>20% de desconto</strong>. Total: <strong>R$${valorJoia.toFixed(2)}</strong>`
         imagem.src = '../image/cupom 2.jpg'
     } else if (cupomCliente == '10%OFF') {
         valorJoia *= 0.10
-        resultado.innerHTML = `Olá, <strong>${nomeCliente} ${sobrenomeCliente}</strong>!!! Você recebeu <strong>10% de desconto</strong>. Total: <strong>${valorJoia.toFixed(2)}</strong>`
+        resultado.innerHTML = `Olá, <strong>${nomeCliente} ${sobrenomeCliente}</strong>!!! Você recebeu <strong>10% de desconto</strong>. Total: <strong>R$${valorJoia.toFixed(2)}</strong>`
         imagem.src = '../image/cupom 3.jpg'
     } else if (cupomCliente == '5%OFF') {
         valorJoia *= 0.05
-        resultado.innerHTML = `Olá, <strong>${nomeCliente} ${sobrenomeCliente}</strong>!!! Você recebeu <strong>5% de desconto</strong>. Total: <strong>${valorJoia.toFixed(2)}</strong>`
+        resultado.innerHTML = `Olá, <strong>R$${nomeCliente} ${sobrenomeCliente}</strong>!!! Você recebeu <strong>5% de desconto</strong>. Total: <strong>R$${valorJoia.toFixed(2)}</strong>`
         imagem.src = '../image/cupom 4.jpg'
     } else {
         resultado.innerText = `Cupom inválido!!`
