@@ -25,6 +25,8 @@ Landing page de uma **joalheria fictícia** criada inicialmente para praticar `b
 - Objetivo inicial: praticar `background-image`
 - Evolução: inclusão de lógica em JavaScript para cálculo de descontos e alternância de tema
 
+### 🔗 Link de acesso
+🔗 [https://joalheria-ficticia.vercel.app/]
 ### 👨🏽‍💻 Autor
 
 - RaphaelAntonio-Tech - <https://github.com/RaphaelAntonio-Tech> 
